@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div>
+    <form>
+        
+            <label>Name</label>
+            <div>
+            <input type="username"required minlength="5"requird maxlength="10"title="login user name">
+        </div>
+        
+        <label>Password</label>
+        <div>
+        
+        <input id="password"type="password" pattern="[A-Za-z"]*[0-9][A-Za-z]*" minlength="5">
+    </div>
+    <label>Mailid</label>
+    <div>
+        <input id="email"type="email"/>
+    </div>
+    <label> upload a pic</label>
+        <div>
+            <input placeholder="file"id="file"type="file"accept="audio/*,video/*,image/*"/>
+        </div>
+    <label>date of birth</label>
+    <div>
+        <input type="date" name="age"><p></p>
+        </div>
+        <label>Year of experience</label>
+        <div>
+            <input title="status" type="number"min="1"max="40"step="1"maxlength="3">
+        </div>
+        <label>Range</label><div>
+        <input id="range"type="range"step=10/>
+    </div>
+    <label>skills</label>
+    <div>
+    <input id="search"type="search"placeholder="search your skill">
+    </div>
+    <label>
+        telephone
+    </label>
+    <div>
+        <input type="tel"name="telid"required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"placeholder="123-456-789">
+    </div>
+    <label>Hobbies</label>
+    <input title="hobby"type="checkbox"checked=true name="items[]"value="reading">reading</input>
+    <input title="option"type="checkbox" name="items[]"value="music">music</input>
+    <input title="option"type="checkbox" name="items[]"value="dance">dance</input>
+</div>
+<label>hidden content</label>
+<div>
+    <input id="hid"type="hidden"/>
+</div>
+<label>URL</label>
+<div>
+    <input title="enter the url"id="url"type="url">
+</div>
+<label>select course</label>
+<div>
+    <select name="course list"title="select a course">
+        <option selected>--Select a value--</option>
+        <option>HTML</option>
+        <option>Java</option>
+        <option>Bootstrap</option>
+        <optgroup label="database">
+        <option>Sql</option>
+        <option>Oracle</option>
+        <option>Mysql</option>
+        </optgroup>
+
+<    </select>
+</div>
+
+
+
+
+    <div>
+        
+    
+            <input type="submit">
+        </div>
+    </form>
+</div>
+<body>
+    
+</body>
+</html>
