@@ -1,205 +1,186 @@
 <!DOCTYPE html>
-<html>
-<title>Index</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-*{
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  
+}
 
+
+body {
+  background-color:aliceblue;
+  color: indianred;
+  font-family: "Poppins", sans-serif;
 }
-body{
-  font-family: Helvetica;
-  -webkit-font-smoothing: antialiased;
-  background-color: aqua;
+
+header a {
+  text-decoration: none;
 }
-h2{
-  text-align: center;
+
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
   font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: violet
-  padding: 30px 0;
+  display: flex;
+  align-items: center;
 }
 
-/* Table Styles */
-
-.table-wrapper{
-  margin: 10px 70px 70px;
-  box-shadow: 0px 35px 50px palegreen;
-  border-radius: 50px 50px;
+#brand a {
+  color: #09c372;
 }
 
-.fl-table {
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: aqua;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#login,
+#signup {
   border-radius: 5px;
-  font-size: 12px;
-  font-weight: normal;
-  border: none;
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 100%;
-  white-space: nowrap;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid #498afb;
+}
+
+#signup {
+  border: 1px solid #ff3860;
+}
+
+#signup a {
+  color: #ff3860;
+}
+
+#login a {
+  color: #498afb;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
   background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-.fl-table td, .fl-table th {
-  text-align: center;
-  padding: 8px;
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.fl-table td {
-  border-right: 1px solid paleturquoise
-  font-size: 12px;
+.open .bar2 {
+  opacity: 0;
 }
 
-.fl-table thead th {
-  color: yellowgreen;
-  background-color: indianred;
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
 }
 
-
-.fl-table thead th:nth-child(odd) {
-  color: #ffffff;
-  background: #3f6032;
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.fl-table tr:nth-child(even) {
-  background: #F8F8F8;
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
 }
 
-/* Responsive */
+.mobile-menu li {
+  margin-bottom: 10px;
+}
 
-@media (max-width: 767px) {
-  .fl-table {
-      display: block;
-      width: 100%;
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
   }
-  .table-wrapper:before{
-      content: "Scroll horizontally >";
-      display: block;
-      text-align: right;
-      font-size: 11px;
-      color: white;
-      padding: 0 0 10px;
-  }
-  .fl-table thead, .fl-table tbody, .fl-table thead th {
-      display: block;
-  }
-  .fl-table thead th:last-child{
-      border-bottom: none;
-  }
-  .fl-table thead {
-      float: left;
-  }
-  .fl-table tbody {
-      width: auto;
-      position: relative;
-      overflow-x: auto;
-  }
-  .fl-table td, .fl-table th {
-      padding: 20px .625em .625em .625em;
-      height: 60px;
-      vertical-align: middle;
-      box-sizing: border-box;
-      overflow-x: hidden;
-      overflow-y: auto;
-      width: 120px;
-      font-size: 13px;
-      text-overflow: ellipsis;
-  }
-  .fl-table thead th {
-      text-align: left;
-      border-bottom: 1px solid #f7f7f9;
-  }
-  .fl-table tbody tr {
-      display: table-cell;
-  }
-  .fl-table tbody tr:nth-child(odd) {
-      background: none;
-  }
-  .fl-table tr:nth-child(even) {
-      background: transparent;
-  }
-  .fl-table tr td:nth-child(odd) {
-      background: #F8F8F8;
-      border-right: 1px solid #E6E4E4;
-  }
-  .fl-table tr td:nth-child(even) {
-      border-right: 1px solid #E6E4E4;
-  }
-  .fl-table tbody td {
-      display: block;
-      text-align: center;
+
+  #hamburger-icon {
+    display: block;
   }
 }
-</style>
-
+  </style>
+</head>
 <body>
-  <h2 >PROJECTS</h2>
-  <div class="table-wrapper">
-      
-      <table class="fl-table">
-          <thead>
-          <tr>
-              <th>HTML-BASICS</th>
-              <th>CHALLANGES</th>
-              <th>JAVASCRIPT-CHALLENGES</th>
-          </tr>
-          </thead>
-          <tbody>            
-  <tr>
-    <td Style="text-align:center"><a href="./src/photo.html">PHOTO</a></td> 
-    <td Style="text-align:center"><a href="profile-card-component-main/index.html">profile-card-component-main</a></td> 
-   <td Style="text-align:center"><a href="./advice-generator-app-main/index.html">Advice Generator</a></td>
-
-    </td> 
-  </tr><tr>
-    <td Style="text-align:center"><a href="./src/video.html">video</a></td> 
-    <td Style="text-align:center"><a href="./fylo-data-storage-component-master/index.html">FYLO</a></td> 
-
-    <td Style="text-align:center"> <a href="./faq-accordion-card-main/index.html">FAQ</a></td> 
-
-  </tr><tr>
-    <td Style="text-align:center"><a href="./src/readonly.html">READONLY</a></td> 
-    <td Style="text-align:center"><a href="./src/Amazon.html">Amazon-Product Launching Page</a>
-  </tr><tr>
-    <td Style="text-align:center"><a href="./src/survey.html">survey</a></td> 
-    <td Style="text-align:center"><a href=></a></td> 
-  </tr><tr>
-    <td Style="text-align:center"><a href="./src/tribute.html">tribute</a></td> 
-    
-    <td Style="text-align:center" ><a href="./order-summary-component-main/index.html">ordersummary</a></a></td> 
-  </tr><tr>
-    <td Style="text-align:center"><a href="./src/table.html">Table</a></td> 
-    <td Style="text-align:center"><a href="./nft-preview-card-component-main/index.html">Nft-Preview</a></a></td> 
-  </tr><tr>
-    <td Style="text-align:center"><a href="./src/para.html">Para</a></td> 
-    <td Style="text-align:center"><a href="./stats-preview-card-component-main/index.html">Stat preview component</a></a></td> 
-  </tr><tr>
-    <td Style="text-align:center"><a href="./src/semanticelement.html">semantics</a></td> 
-    <td Style="text-align:center">  <a href="./testimonials-grid-section-main/index.html">TESTMONIAL</a></td> 
-  </tr><tr>
-    <td Style="text-align:center"><a href="./src/unordered.html">unordered</a></td> 
-    <td Style="text-align:center">
-        <a href="huddle-landing-page-with-alternating-feature-blocks-master/index.html">huddle-landing-page-with-alternating-feature-blocks-master</a></td> 
-  </tr>
-  <tr>
-    <td Style="text-align:center"> <a href="./src/Url.html">Url</a> </td>
-    <td Style="text-align:center"><a href="./testimonials-grid-section-main/index.html"></a></td> 
-  </tr>
-  <tr>
-    <td Style="text-align:center"> <a href="./src/radio.html">Radio</a> </td>
-    <td Style="text-align:center"><a href="./nft-preview-card-component-main/index.html">nft-preview-card-component-main</a></td> 
-  </tr>
-  <tr>
-    <td Style="text-align:center"><a href="./src/pageb.html">pageb/a></td>
-  </tr>
-  <tr>
-    <td Style="text-align:center"><a href="./src/table.html">Table</a></td>    
-  </tr>
+  <h2>WELCOME TO MY PROJECTS</h2>
+  <img src="image/computer.webp" width="100%" height="100%">
+  <header>
+    <div id="brand"><a href="https://www.chainsys.com/">CHAINSYS</a></div>
+    <nav>
+      <ul>
+        <li><a href="./src/redesign.html">projects</a></li>
+        <!--<li><a href="/products">Products</a></li>-->
+        <li><a href="/about">About</a></li>
+        <<!--li id="login"><a href="/login" >Login</a></li>
+        <li id="signup"><a href="/signup">Signup</a></li>-->
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="./src/redesign.html">PROJECTS</a></li>
+        <!--<li><a href=".">ABOUT ME</a></li>-->
+        <!--<li><a href="/about">About</a></li>
+        <li id="login"><a href="/login" >Login</a></li>
+        <li id="signup"><a href="/signup">Signup</a></li>-->
+      </ul>
+    </div>
+  </header>
+  <script type="text/javascript">
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+  </script>
+</body>
+</html>
   
-</tr>
+</body>
+</html>
