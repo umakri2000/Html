@@ -1,107 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu </title>
-</head>
-<body>
-    <div>
-        <caption>menu list of Html pages</caption>
-        <table>
-            
-            <thead>
-            <tr>
-                <th scope="col">
-                    project 
-                </th>
+<html>
+<title>Index</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
 
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div>
-                            <a href="./image/tiger.jpg">list</a>
-                        </div>
-                        <div>
-                            <a href="./src/login.html">login</a>
-                        </div>
-                        <div>
-                        <a href="./src/para.html">para</a>
-                    </div>
-                    <div>
-                    <a href="./src/survey.html">survey</a>
-                </div>
-                <div>
-                <a href="./src/photo.html">photo</a>
-            </div>
-            <div>
-                <a href="./src/radio.html">radio</a>
-            </div>
-            <div>
-                <a href="./src/linktarget.html">linktarget</a>
-            </div>
-            <div>
-                <a href="./src/tribute.html">tribute</a>
-            </div>
-            <div>
-                <a href="./src/video.html">Video</a>
-            </div>
-            <div>
-                <a href="./src/childframe.html">childframe</a>
-            </div>
-            <div>
-                <a href="./src/table.html">table</a>
-            </div>
-            <div>
-                <a href="./src/linkbparent.html">linkbparentframe</a>
-            </div>
-            <div>
-                <a href="./src/readonly.html">readonly</a>
-            </div>
-            <div>
-                <a href="./src/inputscript.html">inputscriptS</a>
-            </div>
-            <div>
-                <a href="./src/inputtype.html">inputtype</a>
-            </div>
-            <div>
-                <a href="./src/Amazon.html">AMAZON</a>
-            </div>
-            <div>
-                <a href="./qr-code-component-main/index.html">Qrcode</a>
-            </div>
-            <div>
-                <a href="./order-summary-component-main/index.html">order</a>
-            </div>
-            <div>
-                <a href="./stats-preview-card-component-main/index.html">Stat preview component</a>
-            </div>
-            
-            <div>
-                <a href="./testimonials-grid-section-main/index.html">testimonialstyle</a>
-            </div>
-            <div>
-                <a href="./fylo-data-storage-component-master/index.html">FYLO</a>
-            </div>
-            <div>
-                <a href="./nft-preview-card-component-main/index.html">nft-preview-card-component-main</a>
-            </div>
-            <div>
-                <a href="profile-card-component-main/index.html">profile-card-component-main</a>
-            </div>
-            <div>
-                <a href="huddle-landing-page-with-alternating-feature-blocks-master/index.html">huddle-landing-page-with-alternating-feature-blocks-master</a>
-            </div>
-            
-                    </td>
-                </tr>
-            </tbody>
-            
-        </table>
-    </div>
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  background-color: aqua;
+}
+h2{
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: violet
+  padding: 30px 0;
+}
+
+/* Table Styles */
+
+.table-wrapper{
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.fl-table td, .fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: #4FC3A1;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #3f6032;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #F8F8F8;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  .fl-table {
+      display: block;
+      width: 100%;
+  }
+  .table-wrapper:before{
+      content: "Scroll horizontally >";
+      display: block;
+      text-align: right;
+      font-size: 11px;
+      color: white;
+      padding: 0 0 10px;
+  }
+  .fl-table thead, .fl-table tbody, .fl-table thead th {
+      display: block;
+  }
+  .fl-table thead th:last-child{
+      border-bottom: none;
+  }
+  .fl-table thead {
+      float: left;
+  }
+  .fl-table tbody {
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+  }
+  .fl-table td, .fl-table th {
+      padding: 20px .625em .625em .625em;
+      height: 60px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 120px;
+      font-size: 13px;
+      text-overflow: ellipsis;
+  }
+  .fl-table thead th {
+      text-align: left;
+      border-bottom: 1px solid #f7f7f9;
+  }
+  .fl-table tbody tr {
+      display: table-cell;
+  }
+  .fl-table tbody tr:nth-child(odd) {
+      background: none;
+  }
+  .fl-table tr:nth-child(even) {
+      background: transparent;
+  }
+  .fl-table tr td:nth-child(odd) {
+      background: #F8F8F8;
+      border-right: 1px solid #E6E4E4;
+  }
+  .fl-table tr td:nth-child(even) {
+      border-right: 1px solid #E6E4E4;
+  }
+  .fl-table tbody td {
+      display: block;
+      text-align: center;
+  }
+}
+</style>
+
+<body>
+  <h2 >PROJECTS</h2>
+  <div class="table-wrapper">
+      <table class="fl-table">
+          <thead>
+          <tr>
+              <th>HTML-BASICS</th>
+              <th>HTML-CHALLENGES</th>
+              <th>JAVASCRIPT-CHALLENGES</th>
+          </tr>
+          </thead>
+          <tbody>            
+  <tr>
+    <td Style="text-align:center"><a href="./src/photo.html">PHOTO</a></td> 
+    <td Style="text-align:center"><a href="profile-card-component-main/index.html">profile-card-component-main</a></td> 
+   <td Style="text-align:center"><a href=D:\htmlrepo\Html\advice-generator-app-main\index.html>Advice Generator</a></td>
+
+    </td> 
+  </tr><tr>
+    <td Style="text-align:center"><a href="./src/video.html">video</a></td> 
+    <td Style="text-align:center"><a href="./fylo-data-storage-component-master/index.html">FYLO</a></td> 
+
+    <td Style="text-align:center"> <a href="D:\htmlrepo\Html\faq-accordion-card-main\index.html">FAQ</a></td> 
+
+  </tr><tr>
+    <td Style="text-align:center"><a href="./src/readonly.html">READONLY</a></td> 
+    <td Style="text-align:center"><a href="./src/Amazon.html">Amazon-Product Launching Page</a>
+  </tr><tr>
+    <td Style="text-align:center"><a href="./src/survey.html">survey</a></td> 
+    <td Style="text-align:center"><a href=></a></td> 
+  </tr><tr>
+    <td Style="text-align:center"><a href="./src/tribute.html">tribute</a></td> 
     
-</body>
-</html>
+    <td Style="text-align:center" ><a href="./src/csslessons/ordersummary.html">ordersummary</a></a></td> 
+  </tr><tr>
+    <td Style="text-align:center"><a href="./src/table.html">Table</a></td> 
+    <td Style="text-align:center"><a href="./src/csslessons/nftpreview.html">Nft-Preview</a></a></td> 
+  </tr><tr>
+    <td Style="text-align:center"><a href="./src/para.html">Para</a></td> 
+    <td Style="text-align:center"><a href="./stats-preview-card-component-main/index.html">Stat preview component</a></a></td> 
+  </tr><tr>
+    <td Style="text-align:center"><a href="./src/semanticelement.html">semantics</a></td> 
+    <td Style="text-align:center">  <a href="./order-summary-component-main/index.html">order</a></td> 
+  </tr><tr>
+    <td Style="text-align:center"><a href="./src/unordered.html">unordered</a></td> 
+    <td Style="text-align:center">
+        <a href="huddle-landing-page-with-alternating-feature-blocks-master/index.html">huddle-landing-page-with-alternating-feature-blocks-master</a></td> 
+  </tr>
+  <tr>
+    <td Style="text-align:center"> <a href="./src/Url.html">Url</a> </td>
+    <td Style="text-align:center"><a href="./testimonials-grid-section-main/index.html"></a></td> 
+  </tr>
+  <tr>
+    <td Style="text-align:center"> <a href="./src/radio.html">Radio</a> </td>
+    <td Style="text-align:center"><a href="./nft-preview-card-component-main/index.html">nft-preview-card-component-main</a></td> 
+  </tr>
+  <tr>
+    <td Style="text-align:center"><a href="./src/pageb.html">pageb/a></td>
+  </tr>
+  <tr>
+    <td Style="text-align:center"><a href="./src/table.html">Table</a></td>    
+  </tr>
+  
+</tr>
