@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+ <script src="./scripts/demoa.js?v1"></script>
+</head>
+
+<body>
+ <p>
+ <label for="firstvalue">X:</label>
+ <input id="firstvalue" type="number" placeholder="enter the number" />
+</p>
+<p>
+<label for="secondvalue">Y:</label>
+ <input id="secondvalue" type="number" placeholder="enter the number" />
+ </p>
+ <p>
+ <input type="button" value="ok" onclick="addtion()" />
+ </p>
+ <p>
+ <input type="button" value="+" onclick="sum()" />
+ </p>
+<p>
+       <input type="button" value="addagain" onclick="add(10,34)" />
+     </p>
+      <p>
+  <input type="button" value="addwithparam"
+          onclick="add(document.getElementById('firstvalue').value,document.getElementById('secondvalue').value)" />
+ </p>
+ <p>
+     <input type="button" value ="problem1" onclick="problem1()"/>
+ </p>
+ <p>
+    <input type="button" value ="problem2" onclick="problem2()"/>
+</p>
+<p>
+    <input type="button" value ="problem3" onclick="problem3()"/>
+</p>
+<p>
+    <label for="rev">Prit</label>
+    <input type="number" id="rev" value ="print" onclick="printdigits(document.getElementById('rev').value)"/>
+</p>
+   <div id="result">
+   </div>
+</body>
+
+</html>

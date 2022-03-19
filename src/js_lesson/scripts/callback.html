@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="clickme">CLIICK ME</button>
+    <p>
+        <input type="button" value ="stop" onclick="clearInterval()"/>
+    </p>
+    <script>
+        const button = document.querySelector('.clickme');
+        function handleClick(){console.log('great Clicking!!!');}
+        button.addEventListener('click',handleClick);
+        const handler1=function(){console.log('nice job!!');};
+        button.addEventListener('click',handler1);
+        const handler2=()=>{console.log('Done!time to eat');}
+        setTimeout(handler2,3000);
+         var Interval=setInterval(handler2,2000);
+         function clearInterval(){
+             clearInterval(interval);
+             console.log('stopped!!!');
+         }
+        
+    </script>
+</body>
+</html>

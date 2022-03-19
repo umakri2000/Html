@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../themes/ecomstyle.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <title>Frontend Mentor | E-commerce product page</title>
+ 
+</head>
+<body>
+
+  <header>
+    <div class=" header">
+      <div class="header-left">
+        <div class="menu-btn">
+          <img src="images/icon-menu.svg" id="menu-icon">
+        </div>
+        <div class="logo">
+          <img src="images/logo.svg">
+        </div>
+        <nav>
+            <ul  id="navbar">
+                <li>
+                  <a href="#">Collections</a>
+                </li>
+                <li>
+                  <a href="#">Men</a>
+                </li>
+                <li>
+                  <a href="#">Women</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div id="cart">
+          <img src="images/icon-cart.svg">
+          <span id="itemadd">0</span>
+        </div>
+        <div class="profile">
+          <img src="images/image-avatar.png" alt="" class="profile-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+   <div class="modal">
+    <div class="modal-images">
+    <div class="show-img">
+      <img src="images/icon-previous.svg" alt="" class="previousBtn">
+      <img class="imgdisplay" src="images/image-product-1.jpg ">
+      <img src="images/icon-next.svg" alt="" class="nextBtn">
+    </div>
+    <div class="images">
+      <img src="images/image-product-1-thumbnail.jpg" alt="" class="img-modal">
+      <img src="images/image-product-2-thumbnail.jpg" alt="" class="img-modal">
+      <img src="images/image-product-3-thumbnail.jpg" alt="" class="img-modal">
+      <img src="images/image-product-4-thumbnail.jpg" alt="" class="img-modal">
+    </div>
+
+    <img src="images/icon-close.svg" alt="" class="closeBtn">
+    </div>
+  </div> 
+
+  
+
+  <main class="container hero">
+<section class="section">
+   <h3>Cart</h3>
+
+</section>
+      <div class="mobile">
+        <div class="mobile-images">
+          <div class="show-img">
+            <img src="images/icon-previous.svg" alt="" class="prevBtn">
+            <img class="hero-img" src="images/image-product-1.jpg ">
+            <img src="images/icon-next.svg" alt="" class="nxtBtn">
+          </div>
+        </div>
+      </div>
+
+
+    <div class="main-left">
+      <div class="show-img">
+         <img class="img-display" src="images/image-product-1.jpg ">
+      </div>
+      <div class="images">
+        <img src="images/image-product-1-thumbnail.jpg" alt="" class="img-show">
+        <img src="images/image-product-2-thumbnail.jpg" alt="" class="img-show">
+        <img src="images/image-product-3-thumbnail.jpg" alt="" class="img-show">
+        <img src="images/image-product-4-thumbnail.jpg" alt="" class="img-show">
+      </div>
+    </div>
+    <div class="main-right">
+      <div class="contents">
+        <h3>Sneaker Company</h3>
+        <h1 class="limited">Fall Limited Edition Sneakers</h1>
+        <p class="para">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+         <div class="price-log">
+       <div class="price">
+          <h2 class="real-price">$<span id="number">125.00</span></h2> <span class="percent">50%</span>
+       </div>
+        <p class="price-1">$250</p> 
+        </div>
+        <div class="buttons">
+          <div class="btn-left">
+            <img src="images/icon-minus.svg" alt="" class="minus-btn">
+            <p class="addon">0</p>
+            <img src="images/icon-plus.svg" alt="" class="plus-btn">
+          </div>
+
+          <div class="btn-right">
+            <img src="images/icon-cart.svg">
+              Add to cart
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="ecommercescript.js"></script>
+</body>
+</html>
