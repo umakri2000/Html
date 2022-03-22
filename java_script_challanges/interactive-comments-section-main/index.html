@@ -7,20 +7,30 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive comments section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="../../themes/interactive.css">
+  
 </head>
 <body>
-
   <!-- Pull dynamic content from the data.json file -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div id="page-center">
+    
+    <div id="comments" class="comments">
+    </div>
   </div>
+  <section id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+       <h3>Delete comment</h3> 
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want delete this comment? This will remove the comment and can't be undone.</p>
+      </div>
+      <div class="modal-footer">
+          <button class="modal-btn" id="cancelDelete">No,Cancel</button>
+          <button class="modal-btn" id="yesDelete">Yes,Delete</button>   
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
