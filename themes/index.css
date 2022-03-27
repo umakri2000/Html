@@ -10,6 +10,14 @@ body {
   background-color:aliceblue;
   color: indianred;
   font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+img{
+  left: 0%;
+    height: 100%;
+    /* align-items: center; */
+    position: absolute;
+
 }
 
 header a {
@@ -45,6 +53,9 @@ ul {
 
 ul a {
   color: aqua;
+  transform: scale(1.1);
+
+  
 }
 
 ul li {
@@ -53,7 +64,6 @@ ul li {
 }
 
 ul li:hover {
-  transform: scale(1.1);
   transition: 0.3s;
 }
 

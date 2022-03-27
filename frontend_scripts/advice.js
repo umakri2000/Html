@@ -15,7 +15,6 @@ function generateAdvice() {
     });
 }
 
-// When button is clicked, run the generateAdvice function
 btn.addEventListener("click", () => {
   generateAdvice();
 });

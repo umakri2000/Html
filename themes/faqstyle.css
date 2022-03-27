@@ -12,9 +12,7 @@
     --dividers-light-grayish-blue: hsl(240, 5%, 91%);
   }
   
-  *,
-  *::before,
-  *::after {
+  *,::before,::after {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -60,7 +58,7 @@
     margin-left: -3rem;
     min-width: 80%;
     position: relative;
-    z-index: 2;
+    z-index: 10;
   }
   
   .container__illustration--bg {
@@ -111,7 +109,7 @@
   }
   
   .question::after {
-    content: url("./images/icon-arrow-down.svg");
+    content: url("../java_script_challanges/faq-accordion-card-main/images/icon-arrow-down.svg");
     position: absolute;
     z-index: 10;
     right: 0;

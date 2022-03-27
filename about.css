@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Inspiration&family=Outfit&family=Palette+Mosaic&family=Source+Code+Pro:wght@200&display=swap');
+
+body{
+    font-family:'Source Code Pro', monospace;
+    background-color:   hsl(256, 26%, 20%);
+    margin:0;
+    
+    
+    
+}
+.name h2{
+    position:relative;
+    color:white;
+    text-align: center;
+    
+
+}
+.image-1 img {
+    position: left;
+    margin-top: 0%;
+    border-radius:30px;
+}
+.info h3 {
+    position: relative;
+    float:right;
+    color:white;
+    transform:translateY(-1153px);
+    padding-right: 5px;
+    margin-left: 741px;
+    line-height: 60px;
+}

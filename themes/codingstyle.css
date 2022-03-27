@@ -81,7 +81,7 @@ body {
 }
 
 .slide-content p {
-  font-size: calc(18px + (32 - 18) * ((100vw - 375px) / (1440 - 375)));
+  font-size: 24px;
   line-height: 24px;
   text-align: center;
   color: #202047;

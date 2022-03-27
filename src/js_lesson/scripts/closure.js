@@ -65,9 +65,9 @@ function createGame(gameName) {
   console.log(hockeyGame('win'));
   const soccerGame=createGame("soccer");
   console.log(soccerGame('win'));
-  const hockeyGame=createGame("hockey");
+   hockeyGame=createGame("hockey");
   console.log(hockeyGame('win'));
-  const soccerGame=createGame("soccer");
+   soccerGame=createGame("soccer");
   console.log(soccerGame('win'));
 
   hockeyGame();

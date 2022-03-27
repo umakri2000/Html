@@ -1,38 +1,16 @@
-const inputEl = document.querySelector('#email');
-const btn = document.querySelector('#submit');
-const RegEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-const iconErrorEl = document.querySelector('.icon-error');
-const textErrorEl = document.querySelector('.text-error');
-const fromGroupEl = document.querySelector('.form-group');
-let errors = [];
-
-btn.addEventListener('click', e => {
-  // remove success class
-  textErrorEl.classList.remove('text-success');
-
-  // reset errors
-  errors = [];
-  // prevent default action of form
-  e.preventDefault();
-  // validate email address
-  const email = inputEl.value;
-
-  if (email == '' || email === undefined) {
-    errors.push('Please provide us your email');
-    // show error
-    iconErrorEl.style.display = 'block';
-    textErrorEl.innerText = errors[0];
-  } else if (!email.match(RegEmail)) {
-    errors.push('Please provide us your valid email');
-    // show error icon
-    iconErrorEl.style.display = 'block';
-    textErrorEl.innerText = errors[0];
-  }
-
-  if (!errors.length > 0) {
-    // hide error icon
-    iconErrorEl.style.display = 'none';
-    textErrorEl.classList.add('text-success');
-    textErrorEl.innerText = 'Thank you for subscribing to our newsletter.';
-  }
+const form = document.querySelector('.container form');
+const email = document.querySelector('.container form input[type=email]');
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
+	let emailValue = email.value;
+	console.log(email.value);
+	if (validateEmail(emailValue)) {
+		form.classList.remove('error');
+	} else {
+		form.classList.add('error');
+	}
 });
+function validateEmail (email) {
+	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	return re.test(String(email).toLowerCase());
+}

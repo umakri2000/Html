@@ -55,8 +55,8 @@
   
   
   .img-box {
-    border-radius: 10px 0 0 10px;
-    overflow: hidden;
+      border-radius: 10px 0 0 10px;
+      overflow: hidden;
   }
   
   .article-banner {
@@ -67,7 +67,7 @@
     transition: all 0.5s ease;
   }
   
-  .article-card:hover .article-banner { transform: scale(1.1); }
+  .article-card:hover .article-banner { transform: scale(1.8); }
   
   .article-content {
     background: var(--white);
@@ -168,7 +168,7 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -60%) rotate(45deg);
+    transform: translate(-50%, -60%) rotate(-45deg);
   }
   
   .share-option span {
@@ -179,8 +179,9 @@
     margin-right: 5px;
   }
   
-  .share-option ion-icon { font-size: 22px; }
+  .share-option { font-size: 22px; }
   
-  .share-option ion-icon:hover,
+  .share-option :hover,
   .article-title:hover,
-  .author-name:hover { filter: invert(1); }
+  .author-name:hover { filter: invert(0.5); }
+  
