@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Inspiration&family=Outfit&family=Palette+Mosaic&display=swap');
+body {
+      background:linear-gradient(pink,aqua);
+      color: white;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-weight: 400;
+  }   
+  #find {
+      height: 30px;
+      width: 300px;
+  }
+  .container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }   
+  input {
+      margin-left: 10px;
+  }   
+  .tab-container {
+      align-items: center;
+      background-color: powderblue;
+      border-radius: 50px;
+      border: 5px solid #333300;
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      text-align: left;
+      width: 780px;
+  }   
+  .tab-container div {
+      margin: 10px;
+  }   
+  table {
+      border-collapse: collapse;
+      border: 1px solid white;
+      margin-top: 3rem;
+      text-align: center;
+      width: 1000px;
+  }
+  hr {
+      width: 31rem;
+  }
+  table tr th,
+  table tr td {
+      border: 1px solid limegreen;
+      padding: 12px 7px;
+      font-weight:bolder
+  }   
+  .bar {
+      margin: 20px;
+  }   
+  .buttons #btn {
+      background-color:hsl(240, 38%, 20%);
+      border-radius: 10px;
+      border: none;
+      color: white;
+      margin: 20px;
+      padding: .7rem 2rem;
+      transition: all 0.5s;
+  }   
+  
+      
+     
+  input {
+      height: 25px;
+      width: 300px;
+  }   
+  .tab {
+        margin-left: 0px;
+    }   
+  .field {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;
+        width: 450px;
+    }   
+  .search {
+        height: 2rem;
+        margin-top: 3rem;
+        text-align: center;
+    }   
+  #submit {
+      background-color: hsl(240, 38%, 20%);
+      border-radius: 80px;
+      border: none;
+      color: white;
+      height: 40px;
+      margin: 20px;
+      padding: .8rem 1rem 1rem 1rem;
+      width: 100px;
+  }   
+  
+  #table1 th{
+      color:red;
+  }
+  
+  
