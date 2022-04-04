@@ -73,6 +73,7 @@ body {
     }   
   .field {
         display: flex;
+        background-color: black;
         justify-content: space-between;
         margin-left: 0px;
         width: 450px;

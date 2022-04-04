@@ -1,0 +1,13 @@
+@import url("../node_modules/bootstrap/dist/css/bootstrap.css");
+
+.container {
+    margin-top: 4rem;
+    width: 700px;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+body {
+    color: whitesmoke;
+    background-color: grey;
+}
