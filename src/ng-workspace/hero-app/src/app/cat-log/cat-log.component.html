@@ -1,0 +1,7 @@
+<div class-="page-header">
+    <div class="lisit -group">
+        <div *ngFor="let item of books; let idx=index;let isFirst=first"
+        class="list-group-item">
+      <button>  <span class="badge text-danger" [innerText]="idx+1"></span></button>
+      <app-book [book] = "item"></app-book>
+      <app-tab [book]="item" [idx]="idx"></app-tab >

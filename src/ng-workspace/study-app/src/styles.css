@@ -1,0 +1,17 @@
+@import url('../node_modules/bootstrap/dist/css/bootstrap.css');
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+.title{
+    text-align: center;
+    vertical-align: bottom;
+    background-color: seagreen;
+    height:40px;
+    padding-top:5px;
+}
+.columnPan{
+    height:80vh;
+    border-color:hotpink;
+    border-style:solid;
+}

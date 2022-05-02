@@ -1,14 +1,38 @@
-.center{
-    font-size: large;
+.links li{
+    display:block;
+    background-color:rgb(28, 160, 68);
+    margin:0%;
 }
-.large{
-    font-size:larger;
+.links a{
+    color: white;
+    margin-bottom: 0%;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
-.medium {font-size: medium;
+.image img{
+  position: relative;
+    left: 56%;
+    height: 12px;
+    width:18px;
+    
+    transform:translateY(-60%)
+}
+ul{
+    margin-left:-3%;
+}
+body{
+  background-color: rgb(180, 33, 57);
+  margin-top: -1%;
+    margin-left: -5px;
+}
 
-}.small
-{
-    font-size: small;
+#mahe{
+  float:right;
+  border-radius: 50%;
+  width:142px;
 }
+ 
+    
 
-</style>

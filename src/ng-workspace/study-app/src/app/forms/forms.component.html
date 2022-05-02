@@ -1,0 +1,31 @@
+<h1>Template forms</h1>
+<form #umaform="ngForm">
+    <div class="formGroup">
+    <label>Name:</label>
+    <input type="text"  id="name" ngModel class="form-control"  required #myname="ngModel" name="myname" minlength="3"  ><!--want to use the name to bind the data with html to angular-->
+    <span *ngIf="myname.touched && myname.invalid" style="color: red ;">pls enter the valid name</span>
+</div>
+ 
+    <label>Role</label>
+    <input type="text" id="role" ngModel class="form-control">
+    <label>gender</label>
+        <select id="gender" name="gender" ngModel class="form-control">
+            <option *ngFor="let g of genderlist">
+                {{g.gender}}
+            </option>
+        </select>
+    <label for ="country">Company</label>
+    <select id="company" name="company" ngModel class="form-control">
+        <option *ngFor="let c of companylist">
+            {{c.companyname}} 
+        </option>
+    </select>
+    <div class="formGroup">
+    <label>email</label>
+    <input type="email" id="email" class="form-control" required #email="ngModel" name="email" pattern="[a-zA-Z]+$" ngModel >
+    <span class="help-block" *ngIf="!email.invalid && email.touched">enter the valid mail id</span>
+</div>
+    <hr>
+    <button type="submit" class="btn btn-dark" [disabled]="!umaform.valid"(click)="onsus(umaform)">submit</button>
+
+</form>

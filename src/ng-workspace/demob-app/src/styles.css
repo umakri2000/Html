@@ -8,6 +8,6 @@
 }
 
 body {
-    color: whitesmoke;
+    color: rgb(red, green, blue);
     background-color: grey;
 }

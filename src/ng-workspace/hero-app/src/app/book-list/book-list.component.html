@@ -1,0 +1,34 @@
+<div class-="page-header">
+    <div class="lisit -group">
+        <div *ngFor="let item of books; let idx=index;let isFirst=first"
+        class="list-group-item">
+        <span class="badge text-danger" [innerText]="idx+1"></span>
+        <h4>Book name:{{item.name| uppercase}}-<small>{{item.  publishdate | date:'MMM YYY'}}</small></h4>
+        <h4>price :{{item.price}}</h4>
+        <h4>{{item.price | priceDiscount: item.discount}}</h4>
+        <img alt="3 Zeros"[src]="item.images[0].thumb">
+        <p>Author:{{item.author}}</p>
+        <button  class="btn-btn-primary"type="button"
+        *ngIf="item.canBuy"
+        (click)="onbuy(item)">BUy</button>
+        <pre>{{item|json}}</pre>
+        <hr/>
+        <section>
+            <ul class="nav nav-pills">
+                
+                    <a  [class.active]="isTabSelected(10+idx)" href (click)="onTabChange($event,10+idx)">Description</a>
+                
+                    <a  [class.active]="isTabSelected(20+idx)" href (click)="onTabChange($event,20+idx)">review</a>
+         
+                    <a [class.active]="isTabSelected(30+idx)"href (click)="onTabChange($event,30+idx)">comments</a>
+            </ul>
+        </section>
+        <hr/>
+        <div class="panel"*ngIf="isTabSelected(10+idx)">
+        {{item.description}}</div>
+        <div class="panel"*ngIf="isTabSelected(20+idx)">Not available</div>
+        <div class="panel"*ngIf="isTabSelected(30+idx)">Not available</div>
+
+
+    </div>
+</div>

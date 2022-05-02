@@ -20,8 +20,11 @@
   
   img {
     display: block;
+    transition: 1s ease;
   }
-  
+  img:hover{
+    transform: rotate(365deg);
+  }
   * {
     margin: 0;
     padding: 0;

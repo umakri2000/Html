@@ -1,0 +1,16 @@
+<div class="col-sm-8">
+    <p>salary:{{details[0].salary}}</p>
+</div>
+<!-- <div *ngIf="place;else noPlace">
+    place is defined
+
+</div>
+<ng-template #noPlace><we can use g template in large action needed to be done-->
+   <!--- place is undefined
+</ng-template> -->
+<p>{{details[0].name}}</p>
+<div *ngFor="let obj of details;index as i; even as e">
+      <h1>  {{i}}-{{obj.name}}</h1>
+    </div>
+    <hr>
+<button class="btn btn-success"[disabled]="btnToogle">Toogle</button>

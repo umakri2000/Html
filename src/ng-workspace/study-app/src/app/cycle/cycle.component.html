@@ -1,0 +1,7 @@
+<button (click)="showButton()">show!!!</button>
+<input tpye="text" [(ngModel)]="name" style="color: red">
+<!-- <h1>{{name}}</h1>  -->
+<app-child *ngIf="showChild" [name]="name">
+    <h2 #projectedcontent style="color: cornflowerblue;">maheshwari💑</h2>
+</app-child>
+    

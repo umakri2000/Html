@@ -15,6 +15,6 @@ function generateAdvice() {
     });
 }
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
   generateAdvice();
 });

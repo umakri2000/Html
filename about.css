@@ -1,31 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Inspiration&family=Outfit&family=Palette+Mosaic&family=Source+Code+Pro:wght@200&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&family=Inspiration&family=Outfit&family=Palette+Mosaic&family=Source+Code+Pro:wght@200&display=swap');
 body{
-    font-family:'Source Code Pro', monospace;
-    background-color:   hsl(256, 26%, 20%);
+      background-color:   hsl(256, 26%, 20%);
+      color:white;
+      font-family:'Source Code Pro', monospace;
+
     margin:0;
-    
-    
-    
+  }
+.white{
+    background-color: white;
+    color:black;
+}
+.red{
+    background-color: red;
+    color:black;
+}
+.blue{
+    background-color: blue;
+    color:black;
+}
+.yellow{
+    background-color: yellow;
+    color:black;
+}
+.black{
+    background-color: black;
+    color:white;
+}
+button,h1{
+    color:chocolate;
+    cursor: pointer;
+    font-size: large;
+    left: 81%;
+    position: relative;
+
+  ;
 }
 .name h2{
-    position:relative;
-    color:white;
-    text-align: center;
-    
-
-}
+      position:relative;
+      text-align: center;
+  }
 .image-1 img {
-    position: left;
-    margin-top: 0%;
-    border-radius:30px;
-}
+      border-radius: 10px;
+      height: 100%;;
+      width: 100%;
+  }
 .info h3 {
-    position: relative;
-    float:right;
-    color:white;
-    transform:translateY(-1153px);
-    padding-right: 5px;
-    margin-left: 741px;
-    line-height: 60px;
-}
+         font-size: 30px;
+         left: 40%;
+         line-height: 220%;;
+         position: absolute;
+         top: 37%;
+         width: 50vw;
+         word-spacing: 10px;
+     } 
+   .name,.pro{
+      backface-visibility: hidden;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+  } 
+   .pro{
+      background-color: #2980b9;
+      transform: rotateY(180deg);
+  }
+   .inner{
+      height: 100%;
+      position: relative;
+      text-align: center;
+      transform-style: preserve-3d;
+      transition: transform 3s;
+      width: 100%;
+  }
+   .outer{
+      background-color: transparent;
+      height: 500px;
+      margin-left: 5%;
+      margin-top:10%;
+      perspective: 1000px;
+      position: absolute;
+      width: 500px;
+  }
+   .outer:hover .inner{
+       transform: rotateY(185deg);
+   }
+   .text{
+       position:relative;
+       transform: rotateY(180deg);
+   }
+   @keyframes info {
+    0% {
+        transform: scale(1    );
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  .info {
+      animation-iteration-count: 2;
+      animation-timing-function: ease-in-out;
+      animation:info 4000ms;
+  }
